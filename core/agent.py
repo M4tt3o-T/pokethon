@@ -7,7 +7,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 load_dotenv()
 
 class PokemonCTFAgent:
-    def __init__(self, model_name="llama3-70b-8192", temperature=0.1):
+    def __init__(self, model_name="llama-3.3-70b-versatile", temperature=0.1):
         """
         Inizializza l'agente collegandosi a Groq.
         Usiamo Llama 3 70B perché i modelli più grandi seguono i system prompt complessi (come quelli di livello 4 e 5) molto meglio dei modelli piccoli.
